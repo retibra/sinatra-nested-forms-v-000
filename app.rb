@@ -15,7 +15,7 @@ module FormsLab
 
     post '/pirates' do
       @pirates = Pirate.new(pirate)
-      
+
       erb :show
     end
   end
