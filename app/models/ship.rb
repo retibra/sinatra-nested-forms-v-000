@@ -7,6 +7,7 @@ class Ship
     @name = hash[:name]
     @type = hash[:type]
     @booty = hash[:booty]
+    @@ships << @@all
   end
 
   def self.all
