@@ -20,7 +20,7 @@ module FormsLab
         Ship.new(ship_hash)
       end
       @ships = Ship.all
-      erb :show
+      erb '/pirates/show'
     end
   end
 end
