@@ -1,11 +1,19 @@
 class Ship
   attr_accessor :name, :type, :booty
 
-@@ships = []
+  @@ships = []
 
   def initialize(hash)
     @name = hash[:name]
     @type = hash[:type]
     @booty = hash[:booty]
+  end
+
+  def self.all
+    @@all
+  end
+
+  def self.clear
+    @@all = []
   end
 end
